@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Team Member Profile Card</title>
+</head>
+
+<body>
+    <div class="card">
+        <section class="main">
+            <p class="name">John Elliot</p>
+            <p>UX/UI Frontend Developer</p>
+        </section>
+
+        <section class="more">
+            <p>discover more about me...</p>
+            <div class="social-links">
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="googleplus">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="info">
+            <section>
+                <p>Posts</p>
+                <p class="value">85</p>
+            </section>
+            <section>
+                <p>Likes</p>
+                <p class="value">2350</p>
+            </section>
+            <section>
+                <p>Comments</p>
+                <p class="value">186</p>
+            </section>
+            <button id="openerBtn">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </button>
+        </section>
+    </div>
+
+</body>
+
+<script>
+    var buttonEl = document.getElementById('openerBtn');
+    var cardEl = document.querySelector('.card');
+
+    buttonEl.addEventListener('click', function() {
+        cardEl.classList.toggle('opened');
+    })
+</script>
+
+</html>
